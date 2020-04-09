@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B408E0122437DE09005234FA /* todoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408E0112437DE09005234FA /* todoTableView.swift */; };
 		B408E034243E4BAB005234FA /* popUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B408E033243E4BAB005234FA /* popUpView.swift */; };
+		B40E60AC243FC1C900F102F2 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E60AB243FC1C900F102F2 /* LoginPage.swift */; };
+		B40E60AE243FC20300F102F2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E60AD243FC20300F102F2 /* SignUpViewController.swift */; };
 		B4A1C9522436C2EC006179E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A1C9512436C2EC006179E3 /* AppDelegate.swift */; };
 		B4A1C9542436C2EC006179E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A1C9532436C2EC006179E3 /* ViewController.swift */; };
 		B4A1C9572436C2EC006179E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A1C9552436C2EC006179E3 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		B408E0112437DE09005234FA /* todoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoTableView.swift; sourceTree = "<group>"; };
 		B408E033243E4BAB005234FA /* popUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpView.swift; sourceTree = "<group>"; };
+		B40E60AB243FC1C900F102F2 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		B40E60AD243FC20300F102F2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B4A1C94E2436C2EC006179E3 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A1C9512436C2EC006179E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4A1C9532436C2EC006179E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				B4A1C9532436C2EC006179E3 /* ViewController.swift */,
 				B408E0112437DE09005234FA /* todoTableView.swift */,
 				B408E033243E4BAB005234FA /* popUpView.swift */,
+				B40E60AB243FC1C900F102F2 /* LoginPage.swift */,
+				B40E60AD243FC20300F102F2 /* SignUpViewController.swift */,
 				B4A1C9552436C2EC006179E3 /* Main.storyboard */,
 				B4A1C9582436C2EE006179E3 /* Assets.xcassets */,
 				B4A1C95A2436C2EE006179E3 /* LaunchScreen.storyboard */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B40E60AE243FC20300F102F2 /* SignUpViewController.swift in Sources */,
 				B408E0122437DE09005234FA /* todoTableView.swift in Sources */,
 				B4A1C9542436C2EC006179E3 /* ViewController.swift in Sources */,
 				B4A1C9522436C2EC006179E3 /* AppDelegate.swift in Sources */,
+				B40E60AC243FC1C900F102F2 /* LoginPage.swift in Sources */,
 				B408E034243E4BAB005234FA /* popUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

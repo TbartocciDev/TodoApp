@@ -1,15 +1,29 @@
 
 import UIKit
 
-var list = ["Run a mile", "Drink coffee", "Visit Grandma"]
-
 class todoTableView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var list = ["Run a mile", "Drink coffee", "Visit Grandma"]
+    @IBOutlet weak var taskInput: UITextField!
+    
+    @IBAction func createTaskBtn(_ sender: Any) {
+        if (taskInput.text != "") {
+            taskInput.text = ""
+            list.append(taskInput.text!)
+            self.createTaskPopover.removeFromSuperview()
+        }
+    }
+    @IBOutlet var createTaskPopover: UIView!
+    
+    @IBAction func showCreatePopover(_ sender: Any) {
+        self.view.addSubview(createTaskPopover)
+        createTaskPopover.center = self.view.center
+    }
+    
+    
+    var list = ["Run a mile", "Drink coffee", "Visit Grandma", "Read", "Code for 2 hours", "Watch podcast"]
     
     @IBOutlet weak var todoListTable: UITableView!
     
-    @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return (list.count)
     }
@@ -35,7 +49,7 @@ class todoTableView: UIViewController, UITableViewDelegate, UITableViewDataSourc
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        todoListTable.reloadData()
         
     }
     
